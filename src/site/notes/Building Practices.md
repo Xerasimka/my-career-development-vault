@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/building-practices/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/building-practices/"}
 ---
 
 
