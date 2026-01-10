@@ -7,6 +7,43 @@
 
 Here is my Excalidrawing, that will live on the landing page:
 
-![[Excalidraw/Drawing 2026-01-10 21.22.50.excalidraw.md \| 1200]]
 
-effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdfdfdf
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/main-mindmap-sketch/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+<div class="markdown-embed-title">
+
+# 1200
+
+</div>
+
+
+
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+
+
+# Excalidraw Data
+
+## Text Elements
+Me
+(and my current comptencies) 
+Project Management 
+knowledge 
+Hard Skills 
+Soft Skills 
+55 
+Building Practices 
+## Element Links
+zEq1EcDo: [[Building Practices\|Building Practices]]
+
+
+
+</div></div>
+
+
+#### Immediate tasks:
+
+1) Ensure Excalidraw drawings are rendered ok in my garden
+2) Ensure Excalidraw drawings can be embedded with clickable links
+3) Investigate Publishing Obsidian Canvas
+4) Investigate Garden appearance settings
+5) Confirm the structure of the vault
