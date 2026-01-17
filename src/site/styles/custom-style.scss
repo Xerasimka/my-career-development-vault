@@ -1,10 +1,25 @@
 body {
-  --dg-content-max-width: 850px;  /* Wider content */
-  --dg-content-font-size: 17px;   /* Bigger text */
+  --dg-content-max-width: 850px;
+  --dg-content-font-size: 17px;
 }
 
-.wide .content {
-  max-width: calc(100vw - 250px) !important;
+/* Widen the content area for pages with Excalidraw */
+.excalidraw-wrapper {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Make the canvas wrapper responsive */
+.excalidraw_canvas-wrapper {
+  max-width: calc(100vw - 300px) !important;
+  width: 100% !important;
+}
+
+/* Make the canvas itself responsive */
+.excalidraw_canvas-wrapper canvas {
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
 }
     /***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
