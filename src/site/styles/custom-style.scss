@@ -51,7 +51,15 @@ body:has(.excalidraw-wrapper) .markdown-preview-view{
 
 /* Only tighten line spacing when the text actually has a line break */
 .canvas-wrapper .canvas-node-text-content p:has(br) {
-  line-height: 1.1 !important;
+  line-height: 1 !important;
+}
+
+/* Center text inside canvas text nodes */
+.canvas-wrapper .canvas-node-text-content {
+  display: flex;
+  align-items: center;      /* vertical centering */
+  justify-content: center;  /* horizontal centering */
+  text-align: center;
 }
 
 
