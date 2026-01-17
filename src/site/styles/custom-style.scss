@@ -39,6 +39,16 @@ body:has(.excalidraw-wrapper) .markdown-preview-view{
   padding-right: 0;
 }
 
+/* Canvas text nodes: tighten inner spacing */
+.canvas-node-text .canvas-node-text-content {
+  padding: 0 !important;
+}
+
+/* Keep a tiny vertical buffer without triggering overflow */
+.canvas-node-text .canvas-node-text-content p {
+  margin: 1px 0 !important;
+}
+
 
 body {
   --dg-content-max-width: 1000px;
