@@ -3,7 +3,7 @@ body {
   --dg-content-font-size: 17px;
 }
 
-/* Set proper navigation sidebar width */
+/* Fix navigation sidebar at 280px */
 .filetree-sidebar {
   width: 280px !important;
   min-width: 280px !important;
@@ -25,28 +25,35 @@ body {
 
 /* Site title */
 .filetree-sidebar h1 {
-  font-size: 24px !important;
+  font-size: 22px !important;
 }
 
-/* Make content wider for Excalidraw pages only */
+/* Make content MUCH wider for Excalidraw pages */
 .content:has(.excalidraw-wrapper) {
-  max-width: calc(100vw - 320px) !important;
-  width: 100% !important;
+  max-width: none !important;
+  width: calc(100vw - 300px) !important;
 }
 
-/* Center the Excalidraw content */
+/* Remove height constraints and allow natural sizing */
 .excalidraw-wrapper {
   display: flex !important;
   justify-content: center !important;
-  align-items: center !important;
+  align-items: flex-start !important;
   width: 100% !important;
-  min-height: 70vh !important;
+  padding: 20px 0 !important;
 }
 
-/* Let canvas scale naturally */
-.excalidraw_canvas-wrapper canvas {
-  max-width: 100% !important;
+/* Let canvas use its natural size */
+.excalidraw_canvas-wrapper {
+  width: auto !important;
   height: auto !important;
+  max-width: 100% !important;
+}
+
+.excalidraw_canvas-wrapper canvas {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
 }
     /***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
