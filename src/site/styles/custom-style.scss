@@ -80,6 +80,11 @@ main.content.cm-s-obsidian.excalidraw-page {
   min-height: 0;
   overflow: hidden;
   padding: 0 !important;
+  max-width: none !important;
+  width: calc(100vw - var(--dg-filetree-w) - var(--dg-filetree-gap));
+  margin-left: calc(var(--dg-filetree-w) + var(--dg-filetree-gap)) !important;
+  margin-right: 0 !important;
+  
 }
 
 /* 2. The markdown container MUST fill the page */
