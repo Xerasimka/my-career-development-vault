@@ -54,13 +54,16 @@ body:has(.excalidraw-wrapper) .markdown-preview-view{
   line-height: 1 !important;
 }
 
-/* Center text inside canvas text nodes */
 .canvas-wrapper .canvas-node-text-content {
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;      /* vertical centering */
   justify-content: center;  /* horizontal centering */
   text-align: center;
+  padding: 0 !important;
 }
+
 
 
 body {
