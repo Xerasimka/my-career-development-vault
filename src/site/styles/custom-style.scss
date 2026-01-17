@@ -1,6 +1,49 @@
 body {
-  --dg-content-max-width: 2150px;
-  --dg-content-font-size: 20px;
+  --dg-content-max-width: 850px;
+  --dg-content-font-size: 17px;
+}
+
+/* Fix navigation sidebar at 280px */
+.filetree-sidebar {
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
+  font-size: 15px !important;
+}
+
+.filetree-sidebar h1 {
+  font-size: 22px !important;
+}
+
+/* Excalidraw full-width, full-height layout */
+.content.excalidraw-page {
+  max-width: none !important;
+  min-height: 100vh !important;
+  margin-left: calc(280px + 20px) !important;
+  margin-right: 0 !important;
+  padding-top: 20px !important;
+  padding-bottom: 0 !important;
+}
+
+/* Make excalidraw wrapper fill the space */
+.excalidraw-page .excalidraw-wrapper {
+  width: 100% !important;
+  min-height: 100vh !important;
+}
+
+/* Override any fixed dimensions on canvas wrapper and canvas */
+.excalidraw-page .excalidraw__canvas-wrapper,
+.excalidraw-page .excalidraw_canvas-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.excalidraw-page canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
 }
 
     /***
