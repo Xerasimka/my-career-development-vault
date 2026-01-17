@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/publish/hofstadter-law/"}
+{"dg-publish":true,"permalink":"/publish/hofstadter-law/","noteIcon":""}
 ---
 
 

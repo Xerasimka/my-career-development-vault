@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/publish/building-practices-test-note/"}
+{"dg-publish":true,"permalink":"/publish/building-practices-test-note/","noteIcon":""}
 ---
 
 
