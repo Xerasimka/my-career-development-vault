@@ -1,6 +1,7 @@
 /* Shared sidebar width (already working for you) */
 :root{
   --dg-filetree-w: clamp(250px, 28vw, 320px);
+  --dg-filetree-width: var(--dg-filetree-w); // Backward compatibility to keep filetree-wrapper and sidbard in sync in terms of width
   --dg-note-max-width: 1000px; /* ← adjust to taste */
 }
 
