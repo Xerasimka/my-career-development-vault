@@ -49,6 +49,11 @@ body:has(.excalidraw-wrapper) .markdown-preview-view{
   margin: 1px 0 !important;
 }
 
+/* Only tighten line spacing when the text actually has a line break */
+.canvas-wrapper .canvas-node-text-content p:has(br) {
+  line-height: 1.1 !important;
+}
+
 
 body {
   --dg-content-max-width: 1000px;
