@@ -1,6 +1,11 @@
 body {
   --dg-content-max-width: 850px;  /* Wider content */
   --dg-content-font-size: 17px;   /* Bigger text */
+}
+
+.wide.content {
+  max-width: calc(100vw - 250px) !important;
+}
     /***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
       IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
@@ -12,4 +17,3 @@ body {
     //  h1 {
     //   color: black;
     //  }
- }
