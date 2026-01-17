@@ -1,3 +1,28 @@
+:root{
+  --dg-filetree-min-width: 250px;
+  --dg-filetree-max-width: 320px;
+}
+
+/* Wrapper controls overall footprint */
+.filetree-wrapper{
+  width: clamp(
+    var(--dg-filetree-min-width),
+    28vw,
+    var(--dg-filetree-max-width)
+  );
+}
+
+/* Sidebar fills wrapper and is allowed to shrink */
+.filetree-sidebar{
+  width: 100%;
+  min-width: var(--dg-filetree-min-width);
+  max-width: var(--dg-filetree-max-width);
+  flex: 0 1 auto;
+  box-sizing: border-box;
+}
+
+
+
 body {
   --dg-content-max-width: 1000px;
 }
