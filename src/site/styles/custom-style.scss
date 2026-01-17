@@ -3,29 +3,39 @@ body {
   --dg-content-font-size: 17px;
 }
 
-/* Widen the main content area for Excalidraw pages */
+/* Make content full-width for pages with Excalidraw, similar to canvas-page */
 .content:has(.excalidraw-wrapper) {
-  max-width: calc(100vw - 280px) !important;
+  max-width: 100% !important;
   width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: calc(100vh - 60px) !important;
+  overflow: hidden !important;
 }
 
-/* Alternative: target the article/main wrapper */
-article:has(.excalidraw-wrapper),
-main:has(.excalidraw-wrapper) {
-  max-width: calc(100vw - 280px) !important;
+/* Make excalidraw-wrapper behave like canvas-wrapper */
+.excalidraw-wrapper {
   width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: auto !important;
 }
 
-/* Make sure the Excalidraw wrappers don't constrain */
-.excalidraw-wrapper,
+/* Canvas wrapper should fill and center */
 .excalidraw_canvas-wrapper {
   max-width: none !important;
-  width: 100% !important;
+  max-height: none !important;
+  width: auto !important;
+  height: auto !important;
 }
 
-/* Make canvas responsive */
+/* Canvas itself */
 .excalidraw_canvas-wrapper canvas {
   max-width: 100% !important;
+  max-height: 100% !important;
   width: auto !important;
   height: auto !important;
 }
