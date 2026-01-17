@@ -3,67 +3,43 @@ body {
   --dg-content-font-size: 17px;
 }
 
-/* Fix navigation sidebar at 280px */
+/* Fix navigation sidebar */
 .filetree-sidebar {
   width: 280px !important;
   min-width: 280px !important;
   max-width: 280px !important;
-  flex-shrink: 0 !important;
 }
 
-/* Increase navigation tree text size */
+/* Increase navigation text */
 .filetree-sidebar {
   font-size: 15px !important;
 }
 
-.filetree-sidebar .folder,
-.filetree-sidebar .filelist,
-.filetree-sidebar a {
-  font-size: 15px !important;
-  line-height: 1.6 !important;
-}
-
-/* Site title */
 .filetree-sidebar h1 {
   font-size: 22px !important;
 }
 
-/* Make content MUCH wider for Excalidraw pages */
-.content:has(.excalidraw-wrapper) {
+/* Excalidraw pages: full-width layout like canvas */
+.content.excalidraw-page {
   max-width: none !important;
-  width: calc(100vw - 300px) !important;
+  margin-left: calc(var(--dg-filetree-min-width) + var(--dg-filetree-gap)) !important;
+  margin-right: 20px !important;
+  padding-top: 40px !important;
 }
 
-/* Remove height constraints and allow natural sizing */
-.excalidraw-wrapper {
+/* Center and scale the Excalidraw drawing */
+.excalidraw-page .excalidraw-wrapper {
   display: flex !important;
   justify-content: center !important;
   align-items: flex-start !important;
   width: 100% !important;
-  padding: 20px 0 !important;
 }
 
-/* Override the hardcoded canvas wrapper dimensions */
-.excalidraw__canvas-wrapper {
-  width: 100% !important;
-  height: auto !important;
-  max-width: none !important;
-}
-
-/* Override the hardcoded canvas dimensions - this is key! */
-.excalidraw__canvas {
-  width: auto !important;
-  height: auto !important;
-  max-width: 95% !important;
-  max-height: none !important;
-}
-
-/* Also target by class combinations */
-canvas.excalidraw__canvas.static,
-canvas.excalidraw__canvas.interactive {
-  width: auto !important;
-  height: auto !important;
-  max-width: 100% !important;
+/* Scale up the canvas */
+.excalidraw-page .excalidraw-wrapper {
+  transform: scale(1.5);
+  transform-origin: top center;
+  margin-bottom: 100px;
 }
     /***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
