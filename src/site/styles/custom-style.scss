@@ -3,7 +3,13 @@ body {
   --dg-content-font-size: 17px;
 }
 
-/* Fix navigation sidebar at 280px */
+/* Fix navigation wrapper to prevent expansion */
+.filetree-wrapper {
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
+}
+
 .filetree-sidebar {
   width: 280px !important;
   min-width: 280px !important;
@@ -19,7 +25,7 @@ body {
 .content.excalidraw-page {
   max-width: none !important;
   min-height: 100vh !important;
-  margin-left: calc(280px + 20px) !important;
+  margin-left: 285px !important;
   margin-right: 0 !important;
   padding-top: 20px !important;
   padding-bottom: 0 !important;
@@ -31,7 +37,7 @@ body {
   min-height: 100vh !important;
 }
 
-/* Override any fixed dimensions on canvas wrapper and canvas */
+/* Override any fixed dimensions on canvas */
 .excalidraw-page .excalidraw__canvas-wrapper,
 .excalidraw-page .excalidraw_canvas-wrapper {
   width: 100% !important;
