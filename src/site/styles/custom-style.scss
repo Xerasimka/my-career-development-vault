@@ -3,19 +3,27 @@ body {
   --dg-content-font-size: 17px;
 }
 
-/* Widen the content area for pages with Excalidraw */
-.excalidraw-wrapper {
+/* Widen the main content area for Excalidraw pages */
+.content:has(.excalidraw-wrapper) {
+  max-width: calc(100vw - 280px) !important;
+  width: 100% !important;
+}
+
+/* Alternative: target the article/main wrapper */
+article:has(.excalidraw-wrapper),
+main:has(.excalidraw-wrapper) {
+  max-width: calc(100vw - 280px) !important;
+  width: 100% !important;
+}
+
+/* Make sure the Excalidraw wrappers don't constrain */
+.excalidraw-wrapper,
+.excalidraw_canvas-wrapper {
   max-width: none !important;
   width: 100% !important;
 }
 
-/* Make the canvas wrapper responsive */
-.excalidraw_canvas-wrapper {
-  max-width: calc(100vw - 300px) !important;
-  width: 100% !important;
-}
-
-/* Make the canvas itself responsive */
+/* Make canvas responsive */
 .excalidraw_canvas-wrapper canvas {
   max-width: 100% !important;
   width: auto !important;
