@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/publish/meditation/","noteIcon":""}
+{"dg-publish":true,"permalink":"/publish/meditation/","tags":["gardenEntry"],"noteIcon":""}
 ---
 
 Meditation might come across as something irrelevant in career progression context or in professional setting in general. Yet, it is something that can profoundly affect people's psychic and therefore their personality and therefore their soft skills.
