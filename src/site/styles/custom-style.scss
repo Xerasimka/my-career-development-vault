@@ -1,39 +1,4 @@
-body {
-  --dg-content-max-width: 850px;
-  --dg-content-font-size: 17px;
-}
 
-/* Fix navigation sidebar */
-.filetree-sidebar {
-  width: 280px !important;
-  min-width: 280px !important;
-  max-width: 280px !important;
-}
-
-/* Increase navigation text */
-.filetree-sidebar {
-  font-size: 15px !important;
-}
-
-.filetree-sidebar h1 {
-  font-size: 22px !important;
-}
-
-/* Excalidraw pages: full-width layout like canvas */
-.content.excalidraw-page {
-  max-width: none !important;
-  margin-left: calc(var(--dg-filetree-min-width) + var(--dg-filetree-gap)) !important;
-  margin-right: 20px !important;
-  padding-top: 40px !important;
-}
-
-/* Center and scale the Excalidraw drawing */
-.excalidraw-page .excalidraw-wrapper {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: flex-start !important;
-  width: 100% !important;
-}
 
     /***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
