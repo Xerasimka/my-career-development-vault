@@ -10,6 +10,11 @@
   width: var(--dg-filetree-w) !important;
 }
 
+.filetree-sidebar{
+  width: var(--dg-filetree-w);
+  flex-shrink: 0;
+}
+
 /* NORMAL TEXT NOTES ONLY */
 body:not(:has(.content.canvas-page))
      :not(:has(.excalidraw-wrapper))
