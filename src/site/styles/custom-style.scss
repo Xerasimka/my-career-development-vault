@@ -2,6 +2,34 @@ body {
   --dg-content-max-width: 1000px;
 }
 
+/* Remove padding from main content area */
+.main.content.cm-s-obsidian.excalidraw-page {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+}
+
+/* Remove margin from excalidraw wrapper */
+.excalidraw-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+}
+
+/* Optional: Remove header padding if needed */
+.excalidraw-page header {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Optional: Make excalidraw container fill available space */
+.excalidraw-page .excalidraw {
+    width: 100% !important;
+    height: 100% !important;
+}
+
 
     /***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
