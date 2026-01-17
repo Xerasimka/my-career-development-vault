@@ -74,33 +74,23 @@ body {
   --dg-content-max-width: 1000px;
 }
 
-/* Remove padding from main content area */
-.main.content.cm-s-obsidian.excalidraw-page {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    margin: 0 !important;
+/* Excalidraw pages: fill the viewport and don't scroll the document */
+main.content.cm-s-obsidian.excalidraw-page {
+  height: calc(100vh - 60px); /* adjust 60px to your header height */
+  min-height: 0;
+  overflow: hidden;
 }
 
-/* Remove margin from excalidraw wrapper */
-.excalidraw-wrapper {
-    margin: 0 !important;
-    padding: 0 !important;
-    height: 100% !important;
+/* Make the wrapper fill the page area */
+main.content.cm-s-obsidian.excalidraw-page .excalidraw-wrapper {
+  height: 100%;
+  width: 100%;
+  min-height: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
 }
 
-/* Optional: Remove header padding if needed */
-.excalidraw-page header {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-/* Optional: Make excalidraw container fill available space */
-.excalidraw-page .excalidraw {
-    width: 100% !important;
-    height: 100% !important;
-}
 
 .filetree-wrapper {
   width: calc(
