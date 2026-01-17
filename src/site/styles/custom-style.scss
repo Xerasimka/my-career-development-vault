@@ -1,25 +1,32 @@
+/* Unified, fluid filetree width */
 :root{
-  --dg-filetree-min-width: 250px;
-  --dg-filetree-max-width: 320px;
+  --dg-filetree-effective-width: clamp(250px, 28vw, 320px);
 }
 
-/* Wrapper controls overall footprint */
+/* Filetree wrapper */
 .filetree-wrapper{
-  width: clamp(
-    var(--dg-filetree-min-width),
-    28vw,
-    var(--dg-filetree-max-width)
-  );
+  width: var(--dg-filetree-effective-width);
 }
 
-/* Sidebar fills wrapper and is allowed to shrink */
+/* Filetree itself */
 .filetree-sidebar{
   width: 100%;
-  min-width: var(--dg-filetree-min-width);
-  max-width: var(--dg-filetree-max-width);
-  flex: 0 1 auto;
+  min-width: 0;
   box-sizing: border-box;
+  flex: 0 1 auto;
 }
+
+/* Main content offset — replaces old min-width + gap logic */
+main.content{
+  margin-left: max(
+    var(--dg-filetree-effective-width),
+    min(
+      (100vw - var(--dg-content-max-width)) / 2,
+      100vw - var(--dg-content-max-width) - var(--dg-sidebar-max-width) - var(--dg-sidebar-gap) - 20px
+    )
+  ) !important;
+}
+
 
 
 
