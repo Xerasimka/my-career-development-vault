@@ -43,14 +43,24 @@ body {
   padding: 20px 0 !important;
 }
 
-/* Let canvas use its natural size */
-.excalidraw_canvas-wrapper {
-  width: auto !important;
+/* Override the hardcoded canvas wrapper dimensions */
+.excalidraw__canvas-wrapper {
+  width: 100% !important;
   height: auto !important;
-  max-width: 100% !important;
+  max-width: none !important;
 }
 
-.excalidraw_canvas-wrapper canvas {
+/* Override the hardcoded canvas dimensions - this is key! */
+.excalidraw__canvas {
+  width: auto !important;
+  height: auto !important;
+  max-width: 95% !important;
+  max-height: none !important;
+}
+
+/* Also target by class combinations */
+canvas.excalidraw__canvas.static,
+canvas.excalidraw__canvas.interactive {
   width: auto !important;
   height: auto !important;
   max-width: 100% !important;
