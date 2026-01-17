@@ -30,6 +30,13 @@ body {
     height: 100% !important;
 }
 
+.filetree-wrapper {
+  width: calc(
+    var(--dg-filetree-min-width) + var(--dg-filetree-gap)
+              );
+}
+
+
 
     /***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
