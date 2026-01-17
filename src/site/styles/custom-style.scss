@@ -64,6 +64,10 @@ body:has(.excalidraw-wrapper) .markdown-preview-view{
   padding: 0 !important;
 }
 
+// makes sure canvas pages don't have padding to avoid scroll bar
+main.content.cm-s-obsidian.canvas-page {
+  padding-bottom: 0 !important;
+}
 
 
 body {
