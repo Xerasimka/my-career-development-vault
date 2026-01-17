@@ -77,7 +77,6 @@ body {
 /* Excalidraw pages: fill the viewport and don't scroll the document */
 main.content.cm-s-obsidian.excalidraw-page {
   height: calc(100vh - 60px); /* adjust 60px to your header height */
-  min-height: 0;
   overflow: hidden;
 }
 
@@ -85,7 +84,6 @@ main.content.cm-s-obsidian.excalidraw-page {
 main.content.cm-s-obsidian.excalidraw-page .excalidraw-wrapper {
   height: 100%;
   width: 100%;
-  min-height: 0;
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden;
