@@ -1,35 +1,36 @@
-/* 250px min, fluid, 320px max */
+/* Shared sidebar width (already working for you) */
 :root{
   --dg-filetree-w: clamp(250px, 28vw, 320px);
+  --dg-note-max-width: 1000px; /* ← adjust to taste */
 }
 
-/* Sidebar footprint */
+/* Sidebar */
 .filetree-wrapper{
   width: var(--dg-filetree-w) !important;
 }
 
-/* Sidebar content fills wrapper */
-.filetree-sidebar{
-  width: 100%;
-  min-width: 0;
+/* NORMAL TEXT NOTES ONLY */
+body:not(:has(.content.canvas-page))
+     :not(:has(.excalidraw-wrapper))
+     .markdown-preview-view{
+
+  max-width: var(--dg-note-max-width);
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  /* push past the sidebar */
+  padding-left: var(--dg-filetree-w);
+  padding-right: 32px; /* optional breathing room */
   box-sizing: border-box;
 }
 
-/* Content must be pushed right by EXACTLY the sidebar width (no extra margin) */
-main.content,
-main,
-.content,
-.content-wrapper,
-.markdown-preview,
-.excalidraw-wrapper,
-.excalidraw-container{
-  margin-left: var(--dg-filetree-w) !important;
-}
-
-.markdown-preview-view,
-.mod-single-child .markdown-preview-view{
-  padding-left: 12px !important;
-  padding-right: 12px !important;
+/* CANVAS + EXCALIDRAW: full width, no centering */
+body:has(.content.canvas-page) .markdown-preview-view,
+body:has(.excalidraw-wrapper) .markdown-preview-view{
+  max-width: none !important;
+  margin: 0 !important;
+  padding-left: var(--dg-filetree-w);
+  padding-right: 0;
 }
 
 
