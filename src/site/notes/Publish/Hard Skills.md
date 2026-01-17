@@ -13,7 +13,6 @@
 | [[Publish/Building Practices (test note)\|Building Practices (test note)]]                       | Building Practices (test note)            |
 | [[Publish/Contract Management\|Contract Management]]                                             | Contract Management                       |
 | [[Publish/Hard Skills\|Hard Skills]]                                                             | Hard Skills                               |
-| [[Publish/Landing page with sketches\|Landing page with sketches]]                               | Landing page with sketches                |
 | [[Publish/Project Management Knowledge\|Project Management Knowledge]]                           | Project Management Knowledge              |
 | [[Publish/Soft Skills\|Soft Skills]]                                                             | Soft Skills                               |
 | [[Publish/Services Knowledge\|Services Knowledge]]                                               | Services Knowledge                        |
@@ -23,6 +22,7 @@
 | [[Publish/Importance of PC Certificate\|Importance of PC Certificate]]                           | Importance of PC Certificate              |
 | [[Publish/On a benefit of setting up a contract\|On a benefit of setting up a contract]]         | On a benefit of setting up a contract     |
 | [[Publish/Risk Registers and their use with Clients\|Risk Registers and their use with Clients]] | Risk Registers and their use with Clients |
+| [[Publish/0. Landing page with sketches\|0. Landing page with sketches]]                         | 0. Landing page with sketches             |
 
 { .block-language-dataview}
 
